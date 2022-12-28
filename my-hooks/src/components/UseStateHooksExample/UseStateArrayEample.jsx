@@ -6,6 +6,14 @@ const FirstExample = () => {
     let newPeople = people.filter((person) => person.id !== id);
     setPeople(newPeople);
   };
+
+  // or using function approach //read filter method to get hold of function
+  //const removeItem = (id)=>{
+  // setPeople((oldPeople)=>{
+  //   let newPeople = oldPeople.filter((person)=>person.id !== id);
+  //   return newPeople
+  // })
+  // }
   return (
     <>
       <h1>useState array example</h1>
@@ -28,3 +36,7 @@ const FirstExample = () => {
 };
 
 export default FirstExample;
+
+// question
+// why do we use arrow function ??
+// why cant we directly call setFunction onclick of event and set the value

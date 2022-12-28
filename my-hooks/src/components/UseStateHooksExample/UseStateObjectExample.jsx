@@ -27,3 +27,6 @@ const UseStateObjExample = () => {
 };
 
 export default UseStateObjExample;
+
+// question
+// why do we use spread operator ?
