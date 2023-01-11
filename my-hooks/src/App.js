@@ -1,5 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
+import Tour from "./components/UseEffectHooksExample/Tours/Tours";
+// import Birthday from "./components/UseStateHooksExample/BirthdayReminderProject/Birthday";
 // import Cleanup from "./components/UseEffectHooksExample/UseEffectCleanup";
 // import UseEffectBasics from "./components/UseEffectHooksExample/UseEffectExample";
 // import FirstExample from "./components/UseStateHooksExample/UseStateArrayEample";
@@ -7,7 +9,7 @@ import "./App.css";
 // import MultipleStateValues from "./components/UseStateHooksExample/MultipleStateValues";
 // import CounterExample from "./components/UseStateHooksExample/CounterExample";
 // import UseEffectUsers from "./components/UseEffectHooksExample/UseEffectUsersExample";
-import UseReducerHook from "./components/useReducerHookexample/UseReducerSetUp";
+// import UseReducerHook from "./components/useReducerHookexample/UseReducerSetUp";
 function App() {
   return (
     <div className="App">
@@ -24,8 +26,10 @@ function App() {
         {/* <Cleanup /> */}
         {/* <UseEffectUsers /> */}
       </div>
-      <div className="useReducer">
-        <UseReducerHook />
+      <div className="useReducer">{/* <UseReducerHook /> */}</div>
+      <div className="Projects">
+        {/* <Birthday /> */}
+        <Tour />
       </div>
     </div>
   );
