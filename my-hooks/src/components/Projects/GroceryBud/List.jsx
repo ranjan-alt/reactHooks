@@ -1,10 +1,9 @@
-const List = ()=>{
-    return (
-        <>
+const List = () => {
+  return (
+    <>
+      <h1>List component</h1>
+    </>
+  );
+};
 
-        <h1>Listv component</h1>
-        </>
-    )
-}
-
-export default List
+export default List;
