@@ -1,6 +1,10 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import Tour from "./components/UseEffectHooksExample/Tours/Tours";
+import Grocery from "./components/Projects/GroceryBud/Grocery";
+// import ContextApi from "./components/Prop-Drilling/UseContextHookExample/UseContextHook";
+// import UseFetchHook from "./components/UseFetch/UseFetchHook";
+// import PropDrilling from "./components/Prop-Drilling/PropDrillimg";
+// import Tour from "./components/UseEffectHooksExample/Tours/Tours";
 // import Birthday from "./components/UseStateHooksExample/BirthdayReminderProject/Birthday";
 // import Cleanup from "./components/UseEffectHooksExample/UseEffectCleanup";
 // import UseEffectBasics from "./components/UseEffectHooksExample/UseEffectExample";
@@ -29,7 +33,14 @@ function App() {
       <div className="useReducer">{/* <UseReducerHook /> */}</div>
       <div className="Projects">
         {/* <Birthday /> */}
-        <Tour />
+        {/* <Tour /> */}
+      </div>
+      <div className="prop-drilling">{/* <PropDrilling /> */}</div>
+      <div className="contextHook">{/* <ContextApi /> */}</div>
+      <div className="usefetchhook">{/* <UseFetchHook /> */}</div>
+
+      <div className="Projects">
+        <Grocery />
       </div>
     </div>
   );

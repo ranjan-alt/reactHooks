@@ -6,7 +6,6 @@ import Modal from "../Modal/Modal";
 //reducer function
 
 const reducer = (state, action) => {
-  console.log(state, action);
   if ((action.type = "ADD_ITEM")) {
     const newPeople = [...state.people, action.payload];
     return {
