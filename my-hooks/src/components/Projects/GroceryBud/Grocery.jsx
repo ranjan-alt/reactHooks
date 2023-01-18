@@ -6,7 +6,7 @@ const Grocery = () => {
   const [list, setList] = useState([]);
   const [isEditing, setIsEditing] = useState(false);
   const [editId, setEditId] = useState(null);
-  const [alert, setAlert] = useState({ show: true, msg: "", type: "" });
+  const [alert, setAlert] = useState({ show: true, msg: "hello world", type: "success" });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,15 +17,17 @@ const Grocery = () => {
       //deal with edit
     } else {
       //showalert
-      const { newItems } = { id: new Date().getTime.toString(), title: name };
-      setList([...list, newItems]);
+      const  newItem  = { id:Math.random(), title:name };
+      setList([...list, newItem]);
       setName("");
+      console.log("ji")
     }
+    
   };
   return (
     <div>
       <form action="" onSubmit={handleSubmit}>
-        {alert.show && <Alert />}
+        {alert.show && <Alert {...alert} />}
         <h3>Grocery bud</h3>
         <input
           type="text"
@@ -34,10 +36,14 @@ const Grocery = () => {
         />
         <button type="submit">{isEditing ? "edit" : "submit"}</button>
       </form>
-      <div>
-        <List />
+      {list.length >0 && (
+        <div>
+        <List items={list}/>
         <button>Clear item</button>
       </div>
+      )
+      
+}
     </div>
   );
 };
